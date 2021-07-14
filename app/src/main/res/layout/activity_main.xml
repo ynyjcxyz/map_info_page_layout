@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/top_image_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:contentDescription="title image view"
+        android:src="@drawable/superstore"/>
+
+    <TextView
+        android:id="@+id/name_text_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_image_view_id"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:text="@string/pacific_food"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/review_score_text_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_text_view_id"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:text="4.2"
+        android:textColor="#ff9900"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/review_stars_text_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_text_view_id"
+        android:layout_toRightOf="@+id/review_score_text_view_id"
+        android:layout_marginLeft="15dp"
+        android:text="★★★★✩"
+        android:textColor="#ff9900"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/review_numbers_text_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_text_view_id"
+        android:layout_toRightOf="@+id/review_stars_text_view_id"
+        android:layout_marginLeft="15dp"
+        android:text="151 reviews"
+        android:textColor="#0000ff"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/catalog_text_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/review_score_text_view_id"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:text="Food product supplier"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/direction_icon_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catalog_text_view_id"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/purple_200"
+        android:contentDescription="direction_icon"
+        android:src="@drawable/outline_directions_black_48"/>
+
+    <TextView
+        android:id="@+id/direction_icon_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/direction_icon_view_id"
+        android:layout_alignLeft="@+id/direction_icon_view_id"
+        android:textSize="10dp"
+        android:text="DIRECTION" />
+
+    <ImageView
+        android:id="@+id/call_icon_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catalog_text_view_id"
+        android:layout_toRightOf="@+id/direction_icon_view_id"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="call_icon"
+        android:src="@drawable/outline_call_black_48"/>
+
+    <TextView
+        android:id="@+id/call_descriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/call_icon_view_id"
+        android:layout_alignLeft="@+id/call_icon_view_id"
+        android:paddingLeft="12dp"
+        android:textSize="10dp"
+        android:text="CALL"/>
+
+
+    <ImageView
+        android:id="@+id/book_mark_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catalog_text_view_id"
+        android:layout_toRightOf="@+id/call_icon_view_id"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="bookmark_icon"
+        android:src="@drawable/outline_bookmark_border_black_48"/>
+
+    <TextView
+        android:id="@+id/bookmark_descriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_mark_view_id"
+        android:layout_alignLeft="@+id/book_mark_view_id"
+        android:paddingLeft="12dp"
+        android:textSize="10dp"
+        android:text="SAVE"/>
+
+    <ImageView
+        android:id="@+id/share_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catalog_text_view_id"
+        android:layout_toRightOf="@+id/book_mark_view_id"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="share_icon"
+        android:src="@drawable/outline_share_black_48"/>
+
+    <TextView
+        android:id="@+id/share_descriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_view_id"
+        android:layout_alignLeft="@+id/share_view_id"
+        android:paddingLeft="10dp"
+        android:textSize="10dp"
+        android:text="SHARE" />
+
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/direction_icon_description"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/outline_location_on_black_24" />
+
+    <TextView
+        android:id="@+id/location_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/direction_icon_description"
+        android:layout_toRightOf="@+id/location_icon"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="10dp"
+        android:text="10703 Vanowen St, North Hollywood, CA 91605" />
+
+    <ImageView
+        android:id="@+id/opening_hour_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_icon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/outline_schedule_black_24"/>
+    <TextView
+        android:id="@+id/opening_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_icon"
+        android:layout_toRightOf="@+id/opening_hour_icon"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="10dp"
+        android:text="Open now: 9AM-8PM" />
+
+    <ImageView
+        android:id="@+id/calling_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/opening_hour_icon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/outline_call_black_24"/>
+
+    <TextView
+        android:id="@+id/calling_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/opening_hour"
+        android:layout_toRightOf="@+id/calling_icon"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="10dp"
+        android:text="(818)9856900" />
+
+    <TextView
+        android:id="@+id/see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calling_number"
+        android:layout_centerInParent="true"
+        android:paddingTop="15dp"
+        android:text="See All" />
+
+</RelativeLayout>
